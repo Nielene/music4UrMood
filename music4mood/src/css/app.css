@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.App {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-auto-rows: 33% 33% 33%;
+}
+
+.welcome {
+  grid-column: 1/ span 3;
+  grid-row: 1;
+  font-family: 'Germania One', cursive;
+  margin-left: 6%;
+  font-size: 150px;
+}
+
+.happy {
+  grid-column: 1;
+  grid-row: 3;
+  margin-left: 8%;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.happyT {
+  margin-left: 7%;
+}
+
+.sad {
+  grid-column: 1;
+  grid-row: 3;
+  margin-left: 75%;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sadT {
+  margin-left: 31%;
+}
+
+.relax {
+  grid-column: 2;
+  grid-row: 3;
+  margin-left: 36%;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.relaxT {
+  margin-left: 9%;
+}
+
+.roman {
+  grid-column: 3;
+  grid-row: 3;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.romanT {
+   margin-left: 4%;
+}
+
+.energy {
+  grid-column: 3;
+  grid-row: 3;
+  margin-left: 65%;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.energyT {
+  margin-left: 18%;
+}
