@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './css/app.css';
+import './css/appBody.css';
 
 let happy = require('./happy.gif');
 let sad = require('./sad.gif');
