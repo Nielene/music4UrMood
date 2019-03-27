@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import './css/appBody.css';
+import './css/App.css';
+import { Switch, Route } from 'react-router-dom';
+import NavbarHoriz from './components/NavbarHoriz';
+import Home from './components/Home'
+import YourMoods from './components/YourMoods'
+import PlaySong from './playSong'
 
-let happy = require('./happy.gif');
-let sad = require('./sad.gif');
-let relax = require('./relax.gif');
-let love = require('./love.gif');
-let energy = require('./energetic.gif');
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+
       <h1 className="welcome">Music For Your Mood</h1>
 
       <div className='happy'>
@@ -38,8 +41,19 @@ class App extends Component {
         <li className='energyT'>HYPED</li>
       </div>
 
+
+
+        <NavbarHoriz />
+        <Switch>
+          <Route exact path="/" render={ (props) => <Home {...props} /> } />
+          <Route path="/yourMoods" render={ (props) => <YourMoods {...props} /> } />
+        </Switch>
+
+
+        <PlaySong/>
+
       </div>
-    );
+    )
   }
 }
 
