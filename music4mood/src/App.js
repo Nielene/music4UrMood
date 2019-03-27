@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import '../css/App.css';
+import './css/App.css';
 
 import { Switch, Route } from 'react-router-dom';
-import NavbarHoriz from './NavbarHoriz';
-import Home from './Home'
-import YourMoods from './YourMoods'
+import NavbarHoriz from './components/NavbarHoriz';
+import Home from './components/Home'
+import YourMoods from './components/YourMoods'
 
 class App extends Component {
   render() {

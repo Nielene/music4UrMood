@@ -52,7 +52,7 @@ nav ul {
   display: flex;
   flex-direction: row;
   height: auto;
-  width: 100%;
+  width: auto;
   justify-content: space-between;
 }
 /* nav ul .leftNavBar,
