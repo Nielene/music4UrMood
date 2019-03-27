@@ -21,7 +21,7 @@ class PlaySong extends Component{
       else if (mood==='happy'){ppid=190301292}
       else if (mood==='relaxed'){ppid=222448237}
 
-      await axios.get(`http://api.napster.com/v2.2/playlists/pp.${ppid}/tracks?apikey=YTkxZTRhNzAtODdlNy00ZjMzLTg0MWItOTc0NmZmNjU4Yzk4&limit=10`)
+      await axios.get(`http://api.napster.com/v2.2/playlists/pp.${ppid}/tracks?apikey=YTkxZTRhNzAtODdlNy00ZjMzLTg0MWItOTc0NmZmNjU4Yzk4&limit=11`)
       .then(thing=>{
         // console.log(thing.data.tracks)
         this.setState({
@@ -32,21 +32,36 @@ class PlaySong extends Component{
         singleSong: this.state.songs[Math.floor(Math.random() * 11)]
       })
     }
-  render(){
-    const {singleSong}=this.state
-    console.log(singleSong)
 
+    addToFavorites=()=>{
+      const{singleSong,likedSongs}=this.state
+
+      this.setState({
+        likedSongs:[...likedSongs,singleSong]
+      })
+    }
+
+    dislike=()=>{
+      this.setState({
+        singleSong: this.state.songs[Math.floor(Math.random() * 11)]
+      })
+    }
+
+  render(){
+    const {singleSong,likedSongs}=this.state
+    console.log(likedSongs)
 
 
     return(
       <>
-        song: {singleSong.name}<br/>
-        artist: {singleSong.artistName}<br/>
-        album Name: {singleSong.albumName}<br/>
-        <iframe src={`https://raw.githubusercontent.com/anars/blank-audio/master/250-milliseconds-of-silence.mp3`} allow='autoplay' id ='audio' style={{display:'none'}} >
-        </iframe>
-          <audio ref="audio_tag" src={`${singleSong.previewURL}`} controls autoPlay/>
+        Song: {singleSong.name}<br/>
+        Artist: {singleSong.artistName}<br/>
+        Album : {singleSong.albumName}<br/>
 
+          <audio ref="audio_tag" src={`${singleSong.previewURL}`} controls autoPlay/>
+          <br/>
+          <button onClick={this.dislike}>Don't like</button>
+          <button onClick={this.addToFavorites}>Like</button><br/>
       </>
     )
   }
