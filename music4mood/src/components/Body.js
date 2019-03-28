@@ -34,7 +34,7 @@ class Body extends Component{
         </div>
 
         <div className='relax'>
-          <Link to='/yourMoods/relax'>
+          <Link to='/yourMoods/relaxed'>
             <button>
               <img src={relax} alt=''/>
               <li className='relaxT'>RELAXED</li>
@@ -43,7 +43,7 @@ class Body extends Component{
         </div>
 
         <div className='roman'>
-          <Link to='/yourMoods/roman'>
+          <Link to='/yourMoods/romantic'>
             <button>
               <img src={love} alt='' />
               <li className='romanT'>ROMANTIC</li>
