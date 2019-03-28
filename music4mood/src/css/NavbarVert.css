@@ -1,6 +1,6 @@
-/* section {
+section {
   display: flex;
-} */
+}
 /* .navVert nav {
   width: 100%;
   height: auto;
@@ -53,7 +53,7 @@
 
 
 
-/* .navVert nav ul {
+.navVert nav ul {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -107,7 +107,7 @@ nav.filler ul li .link:hover:after {
   -webkit-animation: fill 1s forwards;
   -moz-animation: fill 1s forwards;
   opacity: 1;
-} */
+}
 
 
 
@@ -146,6 +146,7 @@ nav.filler ul li .link:hover:after {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  text-decoration: none;
 }
 
 @media screen and (max-height: 450px) {
@@ -200,11 +201,19 @@ nav.filler ul li .link:hover:after {
 }
 
 .nav-close {
-  color: black;
+  color: white;
   transition: all 0.2s ease-in-out;
   /* display: inline-block; */
 }
 .nav-close:hover {
+  cursor: pointer;
+}
+
+.nav-open {
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+.nav-open:hover {
   cursor: pointer;
 }
 

@@ -96,7 +96,7 @@ class NavbarVert extends Component {
 
 
       </section>
-      <span style={{fontSize:'30px'}} className="nav-close" cursor='pointer' onClick={this.toggleNav}>&#9776; menu</span>
+      <span style={{fontSize:'30px'}} className="nav-open" cursor='pointer' onClick={this.toggleNav}>&#9776; menu</span>
       </div>
 
 )
