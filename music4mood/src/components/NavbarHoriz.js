@@ -1,41 +1,48 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import '../css/NavbarHoriz.css'
+import '../css/NavbarHoriz.css';
+
+let metal = require('../css/rNr.png');
 
 class NavbarHoriz extends Component {
-
-  // <nav className='nav'>
-  //   <div className='navbar'>
-  //     <div className='leftNavBar'>
-  //       <Link to='/' className='link' style={{textDecoration: 'none' }}> <p> music4UrMood </p> </Link> {' '}
-  //     </div>
-  //       <div className='rightNavBar'>
-  //         <Link to='/yourMoods' style={{textDecoration: 'none' }}> <p> Your Moods </p></Link> {' '}
-  //       </div>
-  //   </div>
-  //
-  // </nav>
-
   render() {
 
     return (
       <section>
         <nav className='fill'>
+
           <ul>
+
             <div className='leftNavBar'>
-              <li><Link to='/' className='link' style={{textDecoration: 'none' }}> <p> music4UrMood </p> </Link></li> {' '}
+              <li><Link to='/' className='link'> <p className='logo'>M4M</p> </Link>
+              </li>
+              <img src={metal} alt='' className='rNr'/>
             </div>
+
             <div className='rightNavBar'>
-              <li><Link to='/yourMoods' className='link' style={{textDecoration: 'none' }}> <p> Your Moods </p></Link></li> {' '}
+
+              <div className=''>
+                <li><Link to='/' className='link'>
+                <p>music4UrMood</p>
+                </Link></li>
+              </div>
+
+              <div className=''>
+                <li><Link to='/yourMoods' className='link'>
+                <p>Your Moods</p>
+                </Link></li>
+              </div>
+
             </div>
+
           </ul>
 
         </nav>
       </section>
-    )
+    );
 
   }
 
 }
 
-export default withRouter(NavbarHoriz)
+export default withRouter(NavbarHoriz);

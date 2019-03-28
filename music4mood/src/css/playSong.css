@@ -1,0 +1,20 @@
+.wholeCont {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-auto-rows: 33% 33% 33%;
+}
+
+.border{
+  grid-column: 1/ span 3;
+  grid-row: 2;
+  margin-top: 8%;
+  text-align: center;
+}
+
+.songCont {
+  list-style: none;
+}
+
+.artist{
+  font-weight: 800;
+}
