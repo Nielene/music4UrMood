@@ -1,29 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
 .wholeBody{
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-auto-rows: 33% 33% 33%;
 }
-
 .welcome {
   grid-column: 1/ span 3;
   grid-row: 1;
   font-family: 'Germania One', cursive;
-  margin-left: 8%;
   font-size: 150px;
+  text-align: center;
 }
-
 .feeling {
   grid-column: 1/span 3;
   grid-row: 2;
   margin-top: 3%;
-  margin-left: 37%;
   font-size: 30px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
+  text-align: center;
 }
-
 .happy {
   grid-column: 1;
   grid-row: 3;
@@ -31,11 +27,9 @@
   list-style: none;
   font-family: 'Montserrat', sans-serif;
 }
-
 .happyT {
   margin-left: 7%;
 }
-
 .sad {
   grid-column: 1;
   grid-row: 3;
@@ -44,11 +38,9 @@
   list-style: none;
   font-family: 'Montserrat', sans-serif;
 }
-
 .sadT {
   margin-left: 31%;
 }
-
 .relax {
   grid-column: 2;
   grid-row: 3;
@@ -57,11 +49,9 @@
   list-style: none;
   font-family: 'Montserrat', sans-serif;
 }
-
 .relaxT {
   margin-left: 9%;
 }
-
 .roman {
   grid-column: 3;
   grid-row: 3;
@@ -69,11 +59,9 @@
   list-style: none;
   font-family: 'Montserrat', sans-serif;
 }
-
 .romanT {
    margin-left: 4%;
 }
-
 .energy {
   grid-column: 3;
   grid-row: 3;
@@ -82,7 +70,6 @@
   list-style: none;
   font-family: 'Montserrat', sans-serif;
 }
-
 .energyT {
   margin-left: 18%;
 }
