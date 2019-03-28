@@ -7,6 +7,8 @@ class YourMoods extends Component {
     return (
       <div>
       <NavbarVert />
+      <span className="half-circle"></span>
+      <div className='div'>
     <div class="grid-container">
       <div class="sampleMoods">
         <div class="mood1">
@@ -83,6 +85,7 @@ class YourMoods extends Component {
           </ul>
         </div>
       </div>
+    </div>
     </div>
     </div>
     )

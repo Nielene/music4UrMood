@@ -1,11 +1,13 @@
 .grid-container {
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "sampleMoods sampleMoods sampleMoods ." "sampleMoods sampleMoods sampleMoods ." "sampleMoods sampleMoods sampleMoods .";
 }
-
+.div{
+  display: flex;
+  justify-content: center;
+}
 .sampleMoods {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -90,7 +92,18 @@
 li {
   list-style: none;
 }
+.half-circle {
+    width: 100px;
+    height: 200px;
+    background-color: gold;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    border: 10px solid gray;
+    border-left: 0;
 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
 /* .sampleMoods {
   background-color: red;
 } */
