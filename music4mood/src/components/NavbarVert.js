@@ -44,16 +44,18 @@ class NavbarVert extends Component {
 
     return (
       <div>
-      <section id="mySidenav" className='navVert page-wrap sidenav nav-container'>
+      <section id="mySidenav" className='navVert sidenav nav-container'>
 
 
         <nav className='filler'>
 
           <Link to={{javascript:void(0)}} className="closebtn close-nav" onClick={this.toggleNav}>
             <div className='nav-close'> &times; </div>
+
           </Link>
 
           <ul>
+
 
             <div className=''>
               <li>
