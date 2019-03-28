@@ -23,3 +23,13 @@ api key = Y2E5NzVhN2MtZjc4Yi00MTYzLWI4NjgtNTQyNGM3MDcyNGJh
 
  521 git checkout master            (switch back to master first)
  521 git pull                       (get updated master branch)
+
+
+ 529  git branch
+ 530  git add .
+ 531  git commit -m 'fix merge conflict ? '
+ 532  git push origin nielene-navbarHoriz
+ 533  git branch
+ 534  git checkout master
+ 535  git branch
+ 536  git pull origin master      (get updated with the master)

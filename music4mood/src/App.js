@@ -1,18 +1,28 @@
 import React, { Component } from 'react';
 import './css/appBody.css';
-import './css/App.css';
+// import './css/App.css';
 import { Switch, Route } from 'react-router-dom';
 import NavbarHoriz from './components/NavbarHoriz';
+
+import NavbarVert from './components/NavbarVert';  // not staying here
+
 import Home from './components/Home'
 import YourMoods from './components/YourMoods'
 import PlaySong from './playSong'
 
-
+let happy = require('./happy.gif');
+let sad = require('./sad.gif');
+let relax = require('./relax.gif');
+let love = require('./love.gif');
+let energy = require('./energetic.gif');
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+
+      <NavbarHoriz />
+      <NavbarVert />
 
       <h1 className="welcome">Music For Your Mood</h1>
 
@@ -43,7 +53,7 @@ class App extends Component {
 
 
 
-        <NavbarHoriz />
+
         <Switch>
           <Route exact path="/" render={ (props) => <Home {...props} /> } />
           <Route path="/yourMoods" render={ (props) => <YourMoods {...props} /> } />

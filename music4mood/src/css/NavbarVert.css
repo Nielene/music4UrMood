@@ -1,7 +1,7 @@
 section {
   display: flex;
 }
-nav {
+.navVert nav {
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -10,24 +10,30 @@ nav {
   padding: 10px 0;
   box-shadow: 0px 5px 0px #dedede;
 }
-nav ul {
+
+.navVert nav.filler {
+  margin-top: 5px;
+  width: 300px;
+  margin-left: 0px;
+}
+.navVert nav ul {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: auto;
   width: auto;
   justify-content: space-between;
 }
 
-nav ul .leftNavBar,
-nav ul .rightNavBar {
+.navVert nav ul .leftNavBar,
+.navVert nav ul .rightNavBar {
   list-style: none;
   text-align: center;
 }
-nav ul li {
+.navVert nav ul li {
   display: flex;
   flex-direction: row;
 }
-nav ul li .link {
+.navVert nav ul li .link {
   display: flex;
   flex-direction: row;
   /* padding: 15px; */
@@ -37,29 +43,29 @@ nav ul li .link {
   text-transform: uppercase;
   margin: 0 10px;
 }
-nav ul li .link,
-nav ul li .link:after,
-nav ul li .link:before {
+.navVert nav ul li .link,
+.navVert nav ul li .link:after,
+.navVert nav ul li .link:before {
   transition: all .5s;
 }
-nav ul li .link:hover {
+.navVert nav ul li .link:hover {
   color: #555;
 }
 
-nav.fill ul li .link {
+nav.filler ul li .link {
   transition: all 2s;
 }
-nav.fill ul li .link:after {
+nav.filler ul li .link:after {
   text-align: left;
   content: '.';
   margin: 0;
   opacity: 0;
 }
-nav.fill ul li .link:hover {
+nav.filler ul li .link:hover {
   color: #fff;
   z-index: 1;
 }
-nav.fill ul li .link:hover:after {
+nav.filler ul li .link:hover:after {
   z-index: -10;
   animation: fill 1s forwards;
   -webkit-animation: fill 1s forwards;

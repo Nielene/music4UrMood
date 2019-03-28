@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-.App {
+/* .App {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-auto-rows: 33% 33% 33%;
-}
+} */
 
 .welcome {
   grid-column: 1/ span 3;
