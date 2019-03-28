@@ -1,7 +1,4 @@
-something
 
-
-api key = Y2E5NzVhN2MtZjc4Yi00MTYzLWI4NjgtNTQyNGM3MDcyNGJh
 
  501  git clone <url>
  502  pwd
