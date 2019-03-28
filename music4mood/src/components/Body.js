@@ -17,7 +17,7 @@ class Body extends Component{
 
         <div className='happy'>
           <Link to='/yourMoods/happy'>
-            <button>
+            <button className='happyB'>
             <img src={happy} alt=''/>
             <li className='happyT'>HAPPY</li>
             </button>
@@ -26,7 +26,7 @@ class Body extends Component{
 
         <div className='sad'>
           <Link to='/yourMoods/sad'>
-            <button>
+            <button className='sadB'>
               <img src={sad} alt=''/>
               <li className='sadT'>EMO</li>
             </button>
@@ -35,7 +35,7 @@ class Body extends Component{
 
         <div className='relax'>
           <Link to='/yourMoods/relaxed'>
-            <button>
+            <button className='relaxB'>
               <img src={relax} alt=''/>
               <li className='relaxT'>RELAXED</li>
             </button>
@@ -44,7 +44,7 @@ class Body extends Component{
 
         <div className='roman'>
           <Link to='/yourMoods/romantic'>
-            <button>
+            <button className='romanB'>
               <img src={love} alt='' />
               <li className='romanT'>ROMANTIC</li>
           </button>
@@ -53,7 +53,7 @@ class Body extends Component{
 
         <div className='energy'>
           <Link to='/yourMoods/energy'>
-            <button>
+            <button className='energyB'>
               <img src={energy} alt=''/>
               <li className='energyT'>HYPED</li>
               </button>

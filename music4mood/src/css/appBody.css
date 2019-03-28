@@ -30,6 +30,11 @@
 .happyT {
   margin-left: 7%;
 }
+.happyB {
+  padding: 0;
+  border: none;
+  background: none;
+}
 .sad {
   grid-column: 1;
   grid-row: 3;
@@ -40,6 +45,11 @@
 }
 .sadT {
   margin-left: 31%;
+}
+.sadB {
+  padding: 0;
+  border: none;
+  background: none;
 }
 .relax {
   grid-column: 2;
@@ -52,6 +62,11 @@
 .relaxT {
   margin-left: 9%;
 }
+.relaxB {
+  padding: 0;
+  border: none;
+  background: none;
+}
 .roman {
   grid-column: 3;
   grid-row: 3;
@@ -61,6 +76,11 @@
 }
 .romanT {
    margin-left: 4%;
+}
+.romanB {
+  padding: 0;
+  border: none;
+  background: none;
 }
 .energy {
   grid-column: 3;
@@ -72,4 +92,9 @@
 }
 .energyT {
   margin-left: 18%;
+}
+.energyB {
+  padding: 0;
+  border: none;
+  background: none;
 }
