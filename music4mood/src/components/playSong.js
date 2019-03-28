@@ -13,31 +13,26 @@ class PlaySong extends Component{
     };
   }
 
-  test(){
-    console.log(this.props.match.params.mood)
+  getThings=async()=>{
+
+  const { mood } = this.state;
+
+  let ppid = 0;
+  if (mood === 'romantic') {ppid = 180004657;} else if (mood === 'sad') {ppid = 115190858;} else if (mood === 'hyped') {ppid = 181828048;} else if (mood === 'happy') {ppid = 190301292;} else if (mood === 'relaxed') {ppid = 222448237;}
+
+  await axios.get(`http://api.napster.com/v2.2/playlists/pp.${ppid}/tracks?apikey=YTkxZTRhNzAtODdlNy00ZjMzLTg0MWItOTc0NmZmNjU4Yzk4&limit=25`)
+  .then(thing=> {
+
+    this.setState({
+      songs: thing.data.tracks,
+    });
+  });
+  await this.setState({
+    singleSong: this.state.songs[Math.floor(Math.random() * 25)],
+  });
   }
-
-  componentDidMount =async()=> {
-    const { mood } = this.state;
-
-     this.setState({
-      mood:this.props.match.params.mood,
-    });
-     this.test()
-
-    let ppid = 0;
-    if (mood === 'romantic') {ppid = 180004657;} else if (mood === 'sad') {ppid = 115190858;} else if (mood === 'energy') {ppid = 181828048;} else if (mood === 'happy') {ppid = 190301292;} else if (mood === 'relaxed') {ppid = 222448237;}
-
-    await axios.get(`http://api.napster.com/v2.2/playlists/pp.${ppid}/tracks?apikey=YTkxZTRhNzAtODdlNy00ZjMzLTg0MWItOTc0NmZmNjU4Yzk4&limit=11`)
-    .then(thing=> {
-      // console.log(thing.data.tracks)
-      this.setState({
-        songs: thing.data.tracks,
-      });
-    });
-    await this.setState({
-      singleSong: this.state.songs[Math.floor(Math.random() * 11)],
-    });
+  componentDidMount =()=> {
+      this.getThings()
   };
 
   addToFavorites=()=> {
@@ -50,13 +45,30 @@ class PlaySong extends Component{
 
   dislike=()=> {
     this.setState({
-      singleSong: this.state.songs[Math.floor(Math.random() * 11)],
+      singleSong: this.state.songs[Math.floor(Math.random() * 25)],
     });
   };
 
+  checkMood=()=>{
+    const {mood}=this.state
+    if(mood!=this.props.match.params.mood){
+
+      this.setState({
+        mood:this.props.match.params.mood
+      })
+      this.getThings();
+    }
+  }
+  componentDidUpdate=()=>{
+    this.checkMood();
+  }
+
+
   render() {
     const { singleSong, likedSongs } = this.state;
-    // console.log(this.state.mood);
+    // console.log(this.props.match.params.mood);
+    // console.log(this.state.mood)
+
 
     return (
       <div className='wholeCont'>
