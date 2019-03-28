@@ -1,14 +1,79 @@
-.wholeCont {
+.happycon {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-auto-rows: 33% 33% 33%;
+  background-image: url('https://media.giphy.com/media/l4pTlyovRDQxQK6E8/giphy.gif');
+  background-position: center center;
+  vertical-align: middle;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.sadcon {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-auto-rows: 33% 33% 33%;
+  background-image: url('https://media.giphy.com/media/117Q7xzQUHm69W/giphy.gif');
+  background-position: center center;
+  vertical-align: middle;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.relaxedcon {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-auto-rows: 33% 33% 33%;
+  background-image: url('https://media.giphy.com/media/1La2wFgSZFWZa/giphy.gif');
+  background-position: center center;
+  vertical-align: middle;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.romanticcon {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-auto-rows: 33% 33% 33%;
+  background-image: url("https://media.giphy.com/media/N544Zpkax2hPy/giphy.gif");
+  background-position: center center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  margin-left: -15px;
+  padding-top: 45px;
+}
+
+.energycon {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-auto-rows: 33% 33% 33%;
+  background-image: url("https://media.giphy.com/media/3oEjHXgBhWztYoDXY4/giphy.gif");
+  background-position: center center;
+  vertical-align: middle;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  margin-left: -15px;
+  padding-top: 45px;
 }
 
 .border{
-  grid-column: 1/ span 3;
-  grid-row: 2;
-  margin-top: 8%;
+  grid-row: 1;
+  grid-column: 2/ span 3;
+  margin-top: 10%;
   text-align: center;
+  background-color: rgba(246, 247, 234, 0.81);
+  width: 50%;
+  padding: 30px;
+  margin-bottom: -8%;
+  border-radius: 8px;
+  padding-right: 4%;
 }
 
 .songCont {

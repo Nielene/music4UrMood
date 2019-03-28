@@ -59,35 +59,35 @@ class NavbarVert extends Component {
 
             <div className=''>
               <li>
-                <Link to='/happy' className='link' style={{textDecoration: 'none' }}>
+                <Link to='/yourMoods/happy' className='link' style={{textDecoration: 'none' }}>
                 <p> happy </p>
                 </Link>
               </li>
             </div>
             <div className=''>
               <li>
-                <Link to='/sad' className='link' style={{textDecoration: 'none' }}>
+                <Link to='/yourMoods/sad' className='link' style={{textDecoration: 'none' }}>
                   <p> sad </p>
                 </Link>
               </li>
             </div>
             <div className=''>
               <li>
-                <Link to='/relaxed' className='link' style={{textDecoration: 'none' }}>
+                <Link to='/yourMoods/relaxed' className='link' style={{textDecoration: 'none' }}>
                   <p> relaxed </p>
                 </Link>
               </li>
             </div>
             <div className=''>
               <li>
-                <Link to='/romantic' className='link' style={{textDecoration: 'none' }}>
+                <Link to='/yourMoods/romantic' className='link' style={{textDecoration: 'none' }}>
                   <p> romantic </p>
                 </Link>
               </li>
             </div>
             <div className=''>
               <li>
-                <Link to='/hyped' className='link' style={{textDecoration: 'none' }}>
+                <Link to='/yourMoods/energy' className='link' style={{textDecoration: 'none' }}>
                   <p> hyped </p>
                 </Link>
               </li>
@@ -98,7 +98,9 @@ class NavbarVert extends Component {
 
 
       </section>
+
       <span style={{fontSize:'30px'}} className="nav-open" cursor='pointer' onClick={this.toggleNav}> <p>&#9776; CHANGE MOOD </p></span>
+
       </div>
 
 )

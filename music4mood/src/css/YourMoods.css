@@ -1,0 +1,109 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "sampleMoods sampleMoods sampleMoods ." "sampleMoods sampleMoods sampleMoods ." "sampleMoods sampleMoods sampleMoods .";
+}
+.div{
+  display: flex;
+  justify-content: center;
+}
+.sampleMoods {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas: "mood1 mood2 mood3" "mood4 mood5 mood6" "mood7 mood8 mood9";
+  grid-area: sampleMoods;
+  border: 3px black;
+  border-style: dotted;
+  border-bottom: none;
+  border-top: none;
+  width: 800px;
+  height: 400px;
+}
+
+.mood1 {
+  grid-area: mood1;
+  border: 3px black;
+  border-style: solid;
+  background-color: rgba(177, 172, 224, 0.21);
+}
+
+.mood2 {
+  display: flex;
+  grid-area: mood2;
+  border: 3px black;
+  border-style: solid;
+  text-align: center;
+  background-color: rgba(177, 172, 224, 0.21);
+}
+
+.mood3 {
+  grid-area: mood3;
+  border: 3px black;
+  border-style: solid;
+  background-color: rgba(177, 172, 224, 0.21);
+}
+
+.mood4 {
+  grid-area: mood4;
+  border: 3px black;
+  border-style: solid;
+  background-color: rgba(177, 172, 224, 0.21);
+}
+
+.mood5 {
+  grid-area: mood5;
+  border: 3px black;
+  border-style: solid;
+  background-color: rgba(177, 172, 224, 0.21);
+}
+
+.mood6 {
+  grid-area: mood6;
+  border: 3px black;
+  border-style: solid;
+  background-color: rgba(177, 172, 224, 0.21);
+}
+
+.mood7 {
+  grid-area: mood7;
+  border: 3px black;
+  border-style: solid;
+  background-color: rgba(177, 172, 224, 0.21);
+}
+
+.mood8 {
+  grid-area: mood8;
+  border: 3px black;
+  border-style: solid;
+  background-color: rgba(177, 172, 224, 0.21);
+}
+
+.mood9 {
+  grid-area: mood9;
+  border: 3px black;
+  border-style: solid;
+  background-color: rgba(177, 172, 224, 0.21);
+}
+
+li {
+  list-style: none;
+}
+.half-circle {
+    width: 100px;
+    height: 200px;
+    background-color: gold;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    border: 10px solid gray;
+    border-left: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+/* .sampleMoods {
+  background-color: red;
+} */
