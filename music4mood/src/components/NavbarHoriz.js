@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import '../css/NavbarHoriz.css';
 
-let metal = require('../css/rNr.png');
+let metal = require('../assets/rNr.png');
 
 class NavbarHoriz extends Component {
   render() {

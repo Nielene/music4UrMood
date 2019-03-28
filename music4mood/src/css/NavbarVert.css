@@ -1,0 +1,113 @@
+section {
+  display: flex;
+}
+.navVert nav {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background: #fff;
+  background-color: black;
+  padding: 10px 0;
+  box-shadow: 0px 5px 0px #dedede;
+}
+
+.navVert nav.filler {
+  margin-top: 5px;
+  width: 250px;
+  margin-left: 0px;
+
+  opacity:0;
+  filter:alpha(opacity=0);
+  position:relative;
+  margin-bottom:-30px;
+  z-index:10;
+
+/* gradually change opacity */
+  -moz-transition: all 0.4s ease-out;  /* FF4+ */
+    -o-transition: all 0.4s ease-out;  /* Opera 10.5+ */
+    -webkit-transition: all 0.4s ease-out;  /* Saf3.2+, Chrome */
+    -ms-transition: all 0.4s ease-out;  /* IE10? */
+    transition: all 0.4s ease-out;
+
+
+  height: 100%;
+
+}
+.navVert nav.filler:hover {
+  margin-top: 5px;
+  width: 250px;
+  margin-left: 0px;
+
+  opacity:1;
+  filter:alpha(opacity=70);
+
+  /* gradually change opacity */
+  -moz-transition: all 0.4s ease-out;  /* FF4+ */
+    -o-transition: all 0.4s ease-out;  /* Opera 10.5+ */
+    -webkit-transition: all 0.4s ease-out;  /* Saf3.2+, Chrome */
+    -ms-transition: all 0.4s ease-out;  /* IE10? */
+    transition: all 0.4s ease-out;
+
+
+  height: 100%;
+
+}
+
+
+
+.navVert nav ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: auto;
+  justify-content: space-between;
+}
+
+.navVert nav ul .leftNavBar,
+.navVert nav ul .rightNavBar {
+  list-style: none;
+  text-align: center;
+}
+.navVert nav ul li {
+  display: flex;
+  flex-direction: row;
+}
+.navVert nav ul li .link {
+  display: flex;
+  flex-direction: row;
+  /* padding: 15px; */
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+.navVert nav ul li .link,
+.navVert nav ul li .link:after,
+.navVert nav ul li .link:before {
+  transition: all .5s;
+}
+.navVert nav ul li .link:hover {
+  color: #555;
+}
+
+nav.filler ul li .link {
+  transition: all 2s;
+}
+nav.filler ul li .link:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.filler ul li .link:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.filler ul li .link:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
