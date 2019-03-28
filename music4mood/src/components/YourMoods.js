@@ -7,7 +7,7 @@ class YourMoods extends Component {
     return (
       <div>
       <NavbarVert />
-      <span className="half-circle"></span>
+    
       <div className='div'>
     <div class="grid-container">
       <div class="sampleMoods">
