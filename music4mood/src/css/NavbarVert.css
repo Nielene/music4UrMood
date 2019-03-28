@@ -115,7 +115,7 @@ nav.filler ul li .link:hover:after {
 
 
 
-/* slide nav bar */
+/* slide nav bar - website*/
 
 .sidenav {
   height: 100%;
@@ -154,4 +154,65 @@ nav.filler ul li .link:hover:after {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav .link {font-size: 18px;}
+}
+
+
+
+
+/* corey */
+.nav-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  min-height: 100%;
+  /* background: white; */
+  opacity: 0.93;
+  font-family: "Stardos Stencil", cursive;
+  font-size: 45px;
+  z-index: 100;
+  grid-template-rows: 1fr 5fr;
+  display: none;
+}
+
+.slideInLeft {
+  animation-duration: 0.5s;
+  animation-name: leftSlideIn;
+}
+
+.slideOutLeft {
+  animation-duration: 0.5s;
+  animation-name: leftSlideOut;
+}
+
+@keyframes leftSlideIn {
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+
+@keyframes leftSlideOut {
+  0% {
+    margin-left: 0%;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
+
+.nav-close {
+  color: black;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+}
+.nav-close:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  .skill-header {
+    font-size: 50px;
+  }
 }

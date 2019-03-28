@@ -2,29 +2,55 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import '../css/NavbarVert.css'
+import $ from "jquery";
 
 
 
 class NavbarVert extends Component {
+  constructor(props) {
+    super(props);
+    this.showing = false;
+    // this.toggleNav = this.toggleNav.bind(this);
+  }
+
+  toggleNav = () => {
+    let navContainer = $(".nav-container");
+    if (this.showing) {
+      navContainer
+        .removeClass("slideInLeft")
+        .addClass("slideOutLeft");
+      setTimeout(() => {
+        navContainer.css("display", "none");
+      }, 500);
+    } else {
+      navContainer
+        .css("display", "grid")
+        .removeClass("slideOutLeft")
+        .addClass("slideInLeft");
+    }
+    this.showing = !this.showing;
+  }
 
   openNav = () => {
-
+    // document.getElementById("mySidenav").style.width = "250px"
   }
 
   closeNav = () => {
-
+    // document.getElementById("mySidenav").style.width = "0";
   }
 
   render() {
 
     return (
       <div>
-      <section className='navVert page-wrap sidenav'>
+      <section id="mySidenav" className='navVert page-wrap sidenav nav-container'>
 
 
         <nav className='filler'>
 
-          <Link to={{javascript:void(0)}} className="closebtn" onClick={this.closeNav}>&times;</Link>
+          <Link to={{javascript:void(0)}} className="closebtn close-nav" onClick={this.toggleNav}>
+            <div className='nav-close'> &times; </div>
+          </Link>
 
           <ul>
 
@@ -69,7 +95,7 @@ class NavbarVert extends Component {
 
 
       </section>
-      <span style={{fontSize:'30px'}} cursor='pointer' onClick={this.openNav}>&#9776; menu</span>
+      <span style={{fontSize:'30px'}} className="nav-close" cursor='pointer' onClick={this.toggleNav}>&#9776; menu</span>
       </div>
 
 )
