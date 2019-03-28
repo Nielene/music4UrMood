@@ -4,9 +4,12 @@
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "sampleMoods sampleMoods sampleMoods ." "sampleMoods sampleMoods sampleMoods ." "sampleMoods sampleMoods sampleMoods .";
 }
-.div{
-  display: flex;
-  justify-content: center;
+.div1{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+margin-bottom: 50%
 }
 .sampleMoods {
   display: grid;
@@ -92,18 +95,17 @@
 li {
   list-style: none;
 }
-.half-circle {
-    width: 100px;
-    height: 200px;
+/* .half-circle {
+   z-index: -1;
+    width: 200px;
+    height: 400px;
     background-color: gold;
-    border-bottom-right-radius: 100px;
-    border-top-right-radius: 100px;
+    border-bottom-right-radius: 200px;
+    border-top-right-radius: 200px;
     border: 10px solid gray;
     border-left: 0;
 
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-  }
-/* .sampleMoods {
-  background-color: red;
+    box-sizing: border-box;
 } */

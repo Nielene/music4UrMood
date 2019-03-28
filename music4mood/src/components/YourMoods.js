@@ -7,8 +7,9 @@ class YourMoods extends Component {
     return (
       <div>
       <NavbarVert />
-      <span className="half-circle"></span>
-      <div className='div'>
+      <div className='div1'>
+
+<h1> Your Mood History</h1>
     <div class="grid-container">
       <div class="sampleMoods">
         <div class="mood1">
