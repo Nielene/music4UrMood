@@ -15,7 +15,7 @@ class App extends Component {
           <Route exact path="/"
                  component={Body} />
 
-          <Route path="/yourMoods"
+               <Route path="/yourMoods/:mood"
                  component={PlaySong} />
         </Switch>
 

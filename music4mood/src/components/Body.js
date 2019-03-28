@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/appBody.css';
 
 let happy = require('../assets/happy.gif');
@@ -15,28 +16,48 @@ class Body extends Component{
         <p className='feeling'>How are we feeling today?</p>
 
         <div className='happy'>
-          <img src={happy} alt=''/>
-          <li className='happyT'>HAPPY</li>
+          <Link to='/yourMoods/happy'>
+            <button>
+            <img src={happy} alt=''/>
+            <li className='happyT'>HAPPY</li>
+            </button>
+          </Link>
         </div>
 
         <div className='sad'>
-          <img src={sad} alt=''/>
-          <li className='sadT'>EMO</li>
+          <Link to='/yourMoods/sad'>
+            <button>
+              <img src={sad} alt=''/>
+              <li className='sadT'>EMO</li>
+            </button>
+          </Link>
         </div>
 
         <div className='relax'>
-          <img src={relax} alt=''/>
-          <li className='relaxT'>RELAXED</li>
+          <Link to='/yourMoods/relaxed'>
+            <button>
+              <img src={relax} alt=''/>
+              <li className='relaxT'>RELAXED</li>
+            </button>
+          </Link>
         </div>
 
         <div className='roman'>
-          <img src={love} alt='' />
-          <li className='romanT'>ROMANTIC</li>
+          <Link to='/yourMoods/romantic'>
+            <button>
+              <img src={love} alt='' />
+              <li className='romanT'>ROMANTIC</li>
+          </button>
+        </Link>
         </div>
 
         <div className='energy'>
-          <img src={energy} alt=''/>
-          <li className='energyT'>HYPED</li>
+          <Link to='/yourMoods/energy'>
+            <button>
+              <img src={energy} alt=''/>
+              <li className='energyT'>HYPED</li>
+              </button>
+            </Link>
         </div>
       </div>
     );
