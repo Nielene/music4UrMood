@@ -7,25 +7,11 @@ import '../css/NavbarVert.css'
 
 class NavbarVert extends Component {
 
-  openNav = () => {
-
-  }
-
-  closeNav = () => {
-
-  }
-
   render() {
 
     return (
-      <div>
       <section className='navVert page-wrap sidenav'>
-
-
         <nav className='filler'>
-
-          <Link to={{javascript:void(0)}} className="closebtn" onClick={this.closeNav}>&times;</Link>
-
           <ul>
 
             <div className=''>
@@ -66,13 +52,8 @@ class NavbarVert extends Component {
           </ul>
         </nav>
 
-
-
       </section>
-      <span style={{fontSize:'30px'}} cursor='pointer' onClick={this.openNav}>&#9776; menu</span>
-      </div>
-
-)
+    )
 
   }
 
