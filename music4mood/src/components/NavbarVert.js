@@ -43,7 +43,7 @@ class NavbarVert extends Component {
   render() {
 
     return (
-      <div>
+      <div className='majorMenuDiv'>
       <section id="mySidenav" className='navVert sidenav nav-container'>
 
 
@@ -98,7 +98,7 @@ class NavbarVert extends Component {
 
 
       </section>
-      <span style={{fontSize:'30px'}} className="nav-open" cursor='pointer' onClick={this.toggleNav}>&#9776; menu</span>
+      <span style={{fontSize:'30px'}} className="nav-open" cursor='pointer' onClick={this.toggleNav}> <p>&#9776; CHANGE MOOD </p></span>
       </div>
 
 )
