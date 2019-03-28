@@ -1,22 +1,5 @@
-
-
- 501  git clone <url>
- 502  pwd
- 503  cd music4UrMood/
- 506  git checkout -b nielene-navbarHoriz
- 507  git add .
- 508  git commit -m 'test commit'
- 509  git push origin nielene-navbarHoriz
-
- 510  git branch              (switch to master branch)
- 511  git master
- 512  git checkout master
- 513  git branch
- 514  history
-
- 519 git checkout nielene-navbarHoriz     (switch back to branch choice)
- 520 git branch
-
-
- 521 git checkout master            (switch back to master first)
- 521 git pull                       (get updated master branch)
+cd music4mood 
+ 
+ npm install
+ 
+ npm start
