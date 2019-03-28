@@ -44,7 +44,7 @@ class NavbarVert extends Component {
             </div>
             <div className=''>
               <li>
-                <Link to='/yourMoods/hyped' className='link' style={{textDecoration: 'none' }}>
+                <Link to='/yourMoods/energy' className='link' style={{textDecoration: 'none' }}>
                   <p> hyped </p>
                 </Link>
               </li>

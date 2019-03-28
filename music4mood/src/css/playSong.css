@@ -1,13 +1,46 @@
-.wholeCont {
+.happycon {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-auto-rows: 33% 33% 33%;
+  background-image: url("https://media.giphy.com/media/l4pTlyovRDQxQK6E8/giphy.gif")
 }
+
+.sadcon {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-auto-rows: 33% 33% 33%;
+  background-image: url("https://media.giphy.com/media/117Q7xzQUHm69W/giphy.gif")
+}
+
+.relaxedcon {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-auto-rows: 33% 33% 33%;
+  background-image: url("https://media.giphy.com/media/1La2wFgSZFWZa/giphy.gif")
+}
+
+.romanticcon {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-auto-rows: 33% 33% 33%;
+  background-image: url("https://media.giphy.com/media/N544Zpkax2hPy/giphy.gif")
+}
+
+.energycon {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-auto-rows: 33% 33% 33%;
+  background-image: url("https://media.giphy.com/media/3oEjHXgBhWztYoDXY4/giphy.gif")
+}
+
+
+
+
 
 .border{
   grid-column: 1/ span 3;
   grid-row: 2;
-  margin-top: 8%;
+  margin-top: 4%;
   text-align: center;
 }
 

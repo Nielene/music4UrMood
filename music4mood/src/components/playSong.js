@@ -18,7 +18,7 @@ class PlaySong extends Component{
   const { mood } = this.state;
 
   let ppid = 0;
-  if (mood === 'romantic') {ppid = 180004657;} else if (mood === 'sad') {ppid = 115190858;} else if (mood === 'hyped') {ppid = 181828048;} else if (mood === 'happy') {ppid = 190301292;} else if (mood === 'relaxed') {ppid = 222448237;}
+  if (mood === 'romantic') {ppid = 180004657;} else if (mood === 'sad') {ppid = 115190858;} else if (mood === 'energy') {ppid = 181828048;} else if (mood === 'happy') {ppid = 190301292;} else if (mood === 'relaxed') {ppid = 222448237;}
 
   await axios.get(`http://api.napster.com/v2.2/playlists/pp.${ppid}/tracks?apikey=YTkxZTRhNzAtODdlNy00ZjMzLTg0MWItOTc0NmZmNjU4Yzk4&limit=25`)
   .then(thing=> {
@@ -65,13 +65,13 @@ class PlaySong extends Component{
 
 
   render() {
-    const { singleSong, likedSongs } = this.state;
+    const { singleSong, likedSongs,mood } = this.state;
     // console.log(this.props.match.params.mood);
     // console.log(this.state.mood)
 
 
     return (
-      <div className='wholeCont'>
+      <div className={`${mood}con`}>
       <NavbarVert />
         <div className='border'>
           <div className='songCont'>
