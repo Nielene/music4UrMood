@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import '../css/playSong.css';
-
+import NavbarVert from './NavbarVert.js'
 class PlaySong extends Component{
   constructor(props) {
     super(props);
@@ -50,6 +50,7 @@ class PlaySong extends Component{
 
     return (
       <div className='wholeCont'>
+      <NavbarVert />
         <div className='border'>
           <div className='songCont'>
               <li className='artist'>Artist: {singleSong.artistName}</li><br/>

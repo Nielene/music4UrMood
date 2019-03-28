@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import '../css/appBody.css';
 
-let happy = require('../css/happy.gif');
-let sad = require('../css/sad.gif');
-let relax = require('../css/relax.gif');
-let love = require('../css/love.gif');
-let energy = require('../css/energetic.gif');
+let happy = require('../assets/happy.gif');
+let sad = require('../assets/sad.gif');
+let relax = require('../assets/relax.gif');
+let love = require('../assets/love.gif');
+let energy = require('../assets/energetic.gif');
 
 class Body extends Component{
   render() {
