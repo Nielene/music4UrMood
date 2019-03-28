@@ -14,7 +14,8 @@ class NavbarVert extends Component {
   }
 
   toggleNav = () => {
-    let navContainer = $(".nav-container");
+    // let navContainer = $(".nav-container");
+    let navContainer = $(".navVert");
     if (this.showing) {
       navContainer
         .removeClass("slideInLeft")
