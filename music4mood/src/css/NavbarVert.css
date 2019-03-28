@@ -223,10 +223,20 @@ nav.filler ul li .link:hover:after {
   color: black;
   transition: all 0.2s ease-in-out;
   padding-left: 20px;
+  height: 20px;
 }
 .nav-open:hover {
   cursor: pointer;
 }
+.nav-open p {
+  margin-top: 0px;
+  padding-left: 20px;
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: grey;
+}
+
 
 @media only screen and (min-width: 600px) {
   .skill-header {
