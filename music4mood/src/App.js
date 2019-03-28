@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import NavbarHoriz from './components/NavbarHoriz';
 import PlaySong from './components/playSong';
 import Body from './components/Body';
+import YourMoods  from './components/YourMoods.js'
 
 class App extends Component {
   render() {
@@ -17,6 +18,9 @@ class App extends Component {
 
                <Route path="/yourMoods/:mood"
                  component={PlaySong} />
+
+          <Route exact path='/yourMoods'
+              component={YourMoods} />
         </Switch>
 
 
