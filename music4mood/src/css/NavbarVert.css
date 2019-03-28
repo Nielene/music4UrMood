@@ -13,13 +13,52 @@ section {
 
 .navVert nav.filler {
   margin-top: 5px;
-  width: 300px;
+  width: 250px;
   margin-left: 0px;
+
+  opacity:0;
+  filter:alpha(opacity=0);
+  position:relative;
+  margin-bottom:-30px;
+  z-index:10;
+
+/* gradually change opacity */
+  -moz-transition: all 0.4s ease-out;  /* FF4+ */
+    -o-transition: all 0.4s ease-out;  /* Opera 10.5+ */
+    -webkit-transition: all 0.4s ease-out;  /* Saf3.2+, Chrome */
+    -ms-transition: all 0.4s ease-out;  /* IE10? */
+    transition: all 0.4s ease-out;
+
+
+  height: 100%;
+
 }
+.navVert nav.filler:hover {
+  margin-top: 5px;
+  width: 250px;
+  margin-left: 0px;
+
+  opacity:1;
+  filter:alpha(opacity=70);
+
+  /* gradually change opacity */
+  -moz-transition: all 0.4s ease-out;  /* FF4+ */
+    -o-transition: all 0.4s ease-out;  /* Opera 10.5+ */
+    -webkit-transition: all 0.4s ease-out;  /* Saf3.2+, Chrome */
+    -ms-transition: all 0.4s ease-out;  /* IE10? */
+    transition: all 0.4s ease-out;
+
+
+  height: 100%;
+
+}
+
+
+
 .navVert nav ul {
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: 100%;
   width: auto;
   justify-content: space-between;
 }

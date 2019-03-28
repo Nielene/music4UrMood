@@ -33,3 +33,11 @@ api key = Y2E5NzVhN2MtZjc4Yi00MTYzLWI4NjgtNTQyNGM3MDcyNGJh
  534  git checkout master
  535  git branch
  536  git pull origin master      (get updated with the master)
+
+
+ 538  git branch              (see where you are)
+ 539  git checkout -b nielene-navbarVert    (make new branch)
+ 540  git branch
+ 541  git add .               (commit to new branch)
+ 542  git commit -m 'starting navbarVert'
+ 543  git push origin nielene-navbarVert

@@ -13,9 +13,10 @@ class NavbarVert extends Component {
   render() {
 
     return (
-      <section className='navVert'>
+      <section className='navVert page-wrap sidenav'>
         <nav className='filler'>
           <ul>
+
             <div className=''>
               <li>
                 <Link to='/happy' className='link' style={{textDecoration: 'none' }}>
@@ -52,8 +53,8 @@ class NavbarVert extends Component {
               </li>
             </div>
           </ul>
-
         </nav>
+
       </section>
     )
 
